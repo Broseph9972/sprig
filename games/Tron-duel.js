@@ -144,8 +144,8 @@ let winner = ""
 addSprite(snake1[0].x, snake1[0].y, p1h)
 addSprite(snake2[0].x, snake2[0].y, p2h)
 
-addText("Blue:W/A/S/D", {x: 2, y: 0, color: color`7`})
-addText("Red:I/J/K/L", {x: 3, y: 14, color: color`3`})
+addText("Red:W/A/S/D", {x: 2, y: 0, color: color`7`})
+addText("Blue:I/J/K/L", {x: 3, y: 14, color: color`3`})
 
 function checkCollision(x, y, myBody, otherSnake) {
   if (getTile(x, y).some(s => s.type === wall)) return true
